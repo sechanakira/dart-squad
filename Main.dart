@@ -4,7 +4,8 @@ main(){
   print("${name} ${surname}");
 
   Person person = new Person();
-  print(person._lastName);
+  print(person);
+  print(new Student().nickName);
 }
 
 class Person{
@@ -24,6 +25,7 @@ class Student implements Person{
 
   var _firstName;
   var _lastName;
+  var nickName = "The Name";
 
   get firstName => _firstName;
   set firstName(firstName) => _firstName = firstName;
